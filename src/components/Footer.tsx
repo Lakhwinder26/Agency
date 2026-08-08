@@ -30,7 +30,7 @@ export function Footer() {
       className="bg-[var(--text-primary)] border-t border-white/8 pt-16 pb-8"
       aria-label="Site footer"
     >
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top row */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand column */}
@@ -56,7 +56,7 @@ export function Footer() {
                   role="listitem"
                   whileHover={{ scale: 1.15, backgroundColor: "rgba(255,255,255,.12)" }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-[10px] text-white/35 transition-colors duration-200"
+                  className="w-8 h-8 border border-white/10 flex items-center justify-center text-[10px] text-white/35 transition-colors duration-200"
                 >
                   {s.symbol}
                 </motion.a>

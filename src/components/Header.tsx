@@ -21,7 +21,7 @@ export function Header() {
         data-[scrolled=true]:shadow-sm
       "
     >
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Logo */}
         <motion.div
           initial={{ opacity: 0, x: -12 }}
@@ -30,7 +30,7 @@ export function Header() {
           className="flex items-center gap-2"
         >
           {/* Logo mark */}
-          <div className="w-7 h-7 rounded-[5px] bg-[var(--text-primary)] flex items-center justify-center">
+          <div className="w-7 h-7 bg-[var(--text-primary)] flex items-center justify-center">
             <span className="text-white text-xs font-bold font-display">F</span>
           </div>
           <span className="font-display font-700 text-[15px] tracking-tight text-[var(--text-primary)]">
@@ -73,7 +73,7 @@ export function Header() {
             whileTap={{ scale: 0.97 }}
             className="
               inline-flex items-center gap-2 px-4 py-2 text-sm font-medium
-              border border-[var(--text-primary)] rounded-full
+              border border-[var(--text-primary)]
               text-[var(--text-primary)] hover:bg-[var(--text-primary)] hover:text-white
               transition-all duration-250 cursor-pointer
             "

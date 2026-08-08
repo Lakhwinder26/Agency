@@ -67,7 +67,7 @@ export function Portfolio() {
       className="py-28 bg-[var(--surface)] border-y border-[var(--border)]"
       aria-labelledby="portfolio-heading"
     >
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <AnimatedSection className="mb-16">
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">

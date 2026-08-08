@@ -55,7 +55,7 @@ function StepCard({ step, index }: { step: (typeof steps)[0]; index: number }) {
           initial={{ scale: 0.6, opacity: 0 }}
           animate={inView ? { scale: 1, opacity: 1 } : {}}
           transition={{ duration: 0.4, delay: index * 0.14 + 0.1 }}
-          className="flex-shrink-0 w-10 h-10 rounded-full border-2 border-[var(--border)] bg-white flex items-center justify-center text-xs font-semibold text-[var(--text-muted)] font-display"
+          className="flex-shrink-0 w-10 h-10 border-2 border-[var(--border)] bg-white flex items-center justify-center text-xs font-semibold text-[var(--text-muted)] font-display"
         >
           {step.number}
         </motion.div>
@@ -98,9 +98,10 @@ export function Process() {
   return (
     <section
       id="process"
-      className="py-28 max-w-7xl mx-auto px-6"
+      className="w-full py-28"
       aria-labelledby="process-heading"
     >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       {/* Header */}
       <AnimatedSection className="mb-16">
         <p className="text-xs tracking-widest uppercase text-[var(--text-muted)] mb-3">
@@ -136,6 +137,7 @@ export function Process() {
         </div>
         <p className="text-xs text-[var(--text-muted)] mt-2">Typical project timeline — 8–16 weeks</p>
       </AnimatedSection>
+      </div>
     </section>
   );
 }

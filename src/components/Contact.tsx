@@ -59,7 +59,7 @@ export function Contact() {
       className="py-28 bg-[var(--text-primary)]"
       aria-labelledby="contact-heading"
     >
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left: Copy */}
           <AnimatedSection>
@@ -82,7 +82,7 @@ export function Contact() {
             <div className="flex flex-col gap-4">
               {["hello@formastudio.io", "+1 (555) 000-0000", "San Francisco, CA"].map((detail, i) => (
                 <div key={i} className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center">
+                  <div className="w-8 h-8 border border-white/10 flex items-center justify-center">
                     <span className="text-white/30 text-xs">{["@", "☏", "⌖"][i]}</span>
                   </div>
                   <span className="text-sm text-white/50">{detail}</span>
@@ -117,7 +117,7 @@ export function Contact() {
                       type="button"
                       whileHover={{ backgroundColor: "rgba(255,255,255,0.12)" }}
                       whileTap={{ scale: 0.96 }}
-                      className="px-4 py-2 rounded-full border border-white/15 text-xs text-white/50 transition-colors duration-200 cursor-pointer"
+                      className="px-4 py-2 border border-white/15 text-xs text-white/50 transition-colors duration-200 cursor-pointer"
                     >
                       {b}
                     </motion.button>
@@ -132,7 +132,7 @@ export function Contact() {
                 whileHover={{ scale: 1.02, boxShadow: "0 8px 28px rgba(255,255,255,.1)" }}
                 whileTap={{ scale: 0.98 }}
                 className="
-                  mt-2 w-full py-3.5 rounded-full text-sm font-medium
+                  mt-2 w-full py-3.5 text-sm font-medium
                   bg-white text-[var(--text-primary)]
                   transition-shadow duration-250 cursor-pointer
                 "

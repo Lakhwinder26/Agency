@@ -92,9 +92,10 @@ export function Services() {
   return (
     <section
       id="services"
-      className="py-28 max-w-7xl mx-auto px-6"
+      className="w-full py-28"
       aria-labelledby="services-heading"
     >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       {/* Header */}
       <AnimatedSection className="mb-16">
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
@@ -127,6 +128,7 @@ export function Services() {
           <ServiceCard key={svc.id} service={svc} />
         ))}
       </motion.div>
+      </div>
     </section>
   );
 }

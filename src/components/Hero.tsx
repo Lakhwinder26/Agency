@@ -109,12 +109,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="
-        relative min-h-screen pt-28 pb-20
-        flex flex-col justify-center
-        max-w-7xl mx-auto px-6
-        overflow-hidden
-      "
+      className="relative w-full min-h-screen overflow-hidden flex flex-col justify-center"
       aria-label="Hero"
     >
       {/* Background grid */}
@@ -127,7 +122,8 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      <div className="grid lg:grid-cols-2 gap-16 items-center relative z-10">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20">
+      <div className="grid lg:grid-cols-2 gap-16 items-center">
         {/* Left: Copy */}
         <div className="flex flex-col gap-8">
           {/* Pill label */}
@@ -136,7 +132,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
-            <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-[var(--border)] text-xs text-[var(--text-muted)] bg-white/60 backdrop-blur-sm">
+            <span className="inline-flex items-center gap-2 px-3 py-1.5 border border-[var(--border)] text-xs text-[var(--text-muted)] bg-white/60 backdrop-blur-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
               Currently accepting projects · Q3 2026
             </span>
@@ -175,7 +171,7 @@ export function Hero() {
               whileTap={{ scale: 0.97 }}
               id="hero-cta-primary"
               className="
-                px-7 py-3.5 rounded-full text-sm font-medium
+                px-7 py-3.5 text-sm font-medium
                 bg-[var(--text-primary)] text-white
                 transition-shadow duration-250 cursor-pointer
               "
@@ -187,7 +183,7 @@ export function Hero() {
               whileTap={{ scale: 0.97 }}
               id="hero-cta-secondary"
               className="
-                px-7 py-3.5 rounded-full text-sm font-medium
+                px-7 py-3.5 text-sm font-medium
                 border border-[var(--border)] text-[var(--text-primary)]
                 hover:border-[var(--border-hover)] transition-colors duration-250 cursor-pointer
                 bg-white/60 backdrop-blur-sm
@@ -221,6 +217,7 @@ export function Hero() {
         >
           <OrbitGraphic />
         </motion.div>
+      </div>
       </div>
 
       {/* Scroll indicator */}

@@ -11,10 +11,10 @@ interface SkeletonBlockProps {
 }
 
 const roundedMap = {
-  sm: "rounded-[var(--radius-sm)]",
-  md: "rounded-[var(--radius-md)]",
-  lg: "rounded-[var(--radius-lg)]",
-  full: "rounded-full",
+  sm: "rounded-none",
+  md: "rounded-none",
+  lg: "rounded-none",
+  full: "rounded-none",
 };
 
 export function SkeletonBlock({
